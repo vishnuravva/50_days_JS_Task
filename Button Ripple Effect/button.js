@@ -25,6 +25,8 @@ buttons.forEach(button => {
         this.appendChild(circle)
 
         setTimeout(() => circle.remove(),500) // if this not added then it will just add onto the dom 
+        // if added then it will just gets removed form the dom after some time
+        
 
     })
 })
