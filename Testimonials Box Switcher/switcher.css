@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&family=Rubik:ital,wght@0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* overflow: hidden; */
+    padding: 10px;
+}
+.testimonial-container{
+    background: #476ce4;
+    color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative;
+}
+.fa-quote{
+    color:rgba(255,255,255,0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+}
+.fa-quote-right{
+    left: 40px;
+}
+.fa-quote-left{
+    right: 40px;
+}
+.testimonial{
+    line-height: 28px;
+    text-align: justify;
+}
+.user-img{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+.user-details{
+    margin-left: 10px;
+}
+.user .username{
+    margin: 0;
+}
+.user .role{
+    font-weight: normal;
+    margin: 10px 0;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar{
+    background: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left; /* If we exclude this then the animation moves from different direction
+    in order to avoid that we need to specify origin from which it needs to be started*/
+}
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+}
+@media (max-width:768px){
+    .testimonial-container{
+        padding: 20px 30px;
+    }
+    .fa-quote{
+        display: none;
+    }
+}
